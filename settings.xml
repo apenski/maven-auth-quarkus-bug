@@ -1,0 +1,16 @@
+<settings>
+    <servers>
+        <server>
+            <id>repo</id>
+            <configuration>
+                <httpHeaders>
+                    <!--Header authorization like in gitlab or azure -->
+                    <property>
+                        <name>Authorization</name>
+                        <value>token 1234</value>
+                    </property>
+                </httpHeaders>
+            </configuration>
+        </server>
+    </servers>
+</settings>
