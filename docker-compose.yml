@@ -1,22 +1,4 @@
 services:
-#  web:
-#    image: 'gitlab/gitlab-ce:latest'
-#    restart: always
-#    hostname: 'localhost'
-#    container_name: gitlab-ce
-#    environment:
-#      GITLAB_OMNIBUS_CONFIG: |
-#        external_url 'http://localhost'
-#    ports:
-#      - '8080:80'
-#      - '8443:443'
-#    volumes:
-#      - './config:/etc/gitlab'
-#      - './logs:/var/log/gitlab'
-#      - './data:/var/opt/gitlab'
-#    networks:
-#      - gitlab
-
   repo:
     image: nginx
     container_name: repo
@@ -25,25 +7,3 @@ services:
       - ./repo:/www/data
     ports:
       - "80:80"
-
-
-#  server:
-#    image: gitea/gitea:nightly
-#    container_name: gitea
-#    environment:
-#      - USER_UID=1000
-#      - USER_GID=1000
-#    restart: always
-#    networks:
-#      - gitea
-#    volumes:
-#      - ./gitea:/data
-#    ports:
-#      - "3000:3000"
-#      - "222:22"
-
-networks:
-  gitlab:
-    name: gitlab-network
-  gitea:
-    name: gitea-network
