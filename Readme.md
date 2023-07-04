@@ -20,6 +20,7 @@ Artifacts are served from `repo`. Authorization configuration via header is conf
 
 ## 3. Reproduce error with quarkus 3
 
+remove local cached dependency and retry with quarkus
 
 ```
 > rm -rf ~/.m2/repository/example
