@@ -28,6 +28,7 @@
     <build>
         <plugins>
             <plugin>
+                <!-- just to force download of non jar dependency-->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>3.6.0</version>
